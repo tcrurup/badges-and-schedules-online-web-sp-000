@@ -17,7 +17,5 @@ def assign_rooms(speakers_array)
   assigned_rooms
 end
 
-def printer(
-test_names = ["Tony", "Cody", "Nathan", "Nazif"]
-final_test = assign_rooms(test_names)
-binding.pry
+def printer()
+end
