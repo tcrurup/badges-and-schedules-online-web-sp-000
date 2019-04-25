@@ -11,9 +11,11 @@ end
 
 def assign_rooms(speakers_array)
   assigned_rooms = []
-  speakers_array.each_with_index{ |name, index| assigned_rooms << 
-  
+  speakers_array.each_with_index{ 
+    |name, index| assigned_rooms << "Hello, #{name}! You'll be assigned to room #{index + 1}!"
+  }
+  assigned_rooms
 end
 test_names = ["Tony", "Cody", "Nathan", "Nazif"]
-final_test = batch_badge_creator(test_names)
+final_test = assign_rooms(test_names)
 binding.pry
