@@ -18,6 +18,13 @@ def assign_rooms(speakers_array)
 end
 
 def printer(guest_name_array)
-  batch_badge_creator(guest_name_array).
+  batch_badge_creator(guest_name_array).each do |badge|
+    puts badge
+  end
+  
+  assign_rooms(guest_name_array)
+  batch_badge_creator(guest_name_array)|
+    puts badge
+  end
   
 end
