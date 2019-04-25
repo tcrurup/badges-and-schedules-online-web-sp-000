@@ -10,10 +10,7 @@ def batch_badge_creator(guest_name_array)
 end
 
 def assign_rooms(speakers_array)
-  assigned_rooms = []
-  room_number = 0
-  speakers_array.each do |speaker|
-    assigned_rooms << ""
+  speakers_array.each_with_index
   
 end
 test_names = ["Tony", "Cody", "Nathan", "Nazif"]
